@@ -6,7 +6,7 @@ export type ChatMessage = {
     content: string;
 }
 
-export type DocumentMetaData = {
+export type DocumentMetadata = {
     document_id: string;
     filename: string;
     content_type: string;
@@ -16,5 +16,5 @@ export type DocumentMetaData = {
 
 export type UploadResponse = {
     session_id: string;
-    documents: DocumentMetaData[]
+    documents: DocumentMetadata[]
 }
