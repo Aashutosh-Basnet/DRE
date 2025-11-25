@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain-groq
+langchain-community
+langchain-chroma
+langchain-text-splitters
+langchain-core
+pydantic
+python-multipart
+PyPDF2
+python-docx
+beautifulsoup4
+sentence-transformers
