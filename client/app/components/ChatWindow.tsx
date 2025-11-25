@@ -2,10 +2,11 @@ import { RefObject } from "react";
 import { ChatMessage } from "../types/types";
 import { MessageBubble } from "./MessageBubble";
 
+
 type ChatWindowProps = {
   messages: ChatMessage[];
   isLoading: boolean;
-  chatContainerRef: RefObject<HTMLDivElement>;
+  chatContainerRef: RefObject<HTMLDivElement | null>;
 };
 
 export function ChatWindow({ messages, isLoading, chatContainerRef }: ChatWindowProps) {
