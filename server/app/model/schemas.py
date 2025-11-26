@@ -21,3 +21,14 @@ class ChatRequest(BaseModel):
         default=None,
         description="Restrict retrieval to those document IDs"
     )
+
+class Citation(BaseModel):
+    document_id: str
+    source: str
+    chunk_index: int
+    text_snippet: str
+
+
+class ChatResponse(BaseModel):
+    answer: str
+    citations: List[Citation]
